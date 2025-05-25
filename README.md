@@ -108,6 +108,6 @@ This project is licensed under the MIT License.
 ---
 
 Author: Raeedah Musa
-GitHub: @Esme-raida
+GitHub: https://github.com/Esme-raida
 
 ---
