@@ -1,7 +1,5 @@
-Thanks for the correction! Here's the complete and corrected README.md for your Form Validator project, with login.html, signup.html, login.css, signup.css, login.js, signup.js, and a shared validators.js file used by both pages:
-
-
----
+Author: Raeedah Musa
+GitHub: https://github.com/Esme-raida
 
 # Form Validator
 
@@ -104,10 +102,3 @@ License
 
 This project is licensed under the MIT License.
 
-
----
-
-Author: Raeedah Musa
-GitHub: https://github.com/Esme-raida
-
----
