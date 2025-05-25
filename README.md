@@ -1,4 +1,5 @@
-Author: Raeedah Musa
+# Author
+Raeedah Musa
 GitHub: https://github.com/Esme-raida
 
 # Form Validator
