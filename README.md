@@ -1,28 +1,24 @@
-# Form-Validator
-A simple and basic form validator
-Absolutely! Here's the entire markdown content, ready to copy and paste directly into your README.md file on GitHub:
+Thanks for the correction! Here's the complete and corrected README.md for your Form Validator project, with login.html, signup.html, login.css, signup.css, login.js, signup.js, and a shared validators.js file used by both pages:
 
 
 ---
 
 # Form Validator
 
-A simple and lightweight form validator built with vanilla JavaScript.
-This project validates user input in real time, ensuring that all required fields are correctly filled before form submission.
+A web-based form validation project with separate *Login* and *Signup* pages.
+Both pages use a shared validators.js file that contains reusable validation functions for real-time input checking, where necessary.
 
 ## Features
 
+- Separate pages for Login and Signup
+- Shared validation logic across both pages
 - Validates:
   - Required fields
-  - Valid email format
-  - Minimum password length
-  - Matching password confirmation
-- Real-time input validation
-- Simple and easy to customize
-
-## Demo
-
-[View Live Demo](#) <!-- Replace # with your hosted demo link -->
+  - Email format
+  - Password strength
+  - Password confirmation match
+- Real-time validation feedback
+- Clean and responsive UI
 
 ## Technologies
 
@@ -30,47 +26,88 @@ This project validates user input in real time, ensuring that all required field
 - CSS3  
 - JavaScript (ES6)
 
+## Project Structure
+
+form-validator/ ├── login.html ├── login.css ├── login.js ├── signup.html ├── signup.css ├── signup.js └── validators.js
+
 ## Getting Started
 
-### Clone the Repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/form-validator.git
+git clone https://github.com/Esme-raida/Form-Validator.git
 cd form-validator
 
-Open in Browser
+2. Open in Browser
 
-Simply open the index.html file in your browser:
+Open either HTML file directly in your browser:
 
-open index.html
+open login.html
+# or
+open signup.html
 
-Or right-click and select "Open with Live Server" (if using VS Code).
+Or use Live Server in VS Code for better experience.
 
-Project Structure
+How It Works
 
-USAGE
+Login Page (login.html):
 
-1. Enter your data into the form fields.
+Validates email and password fields.
 
-
-2. Invalid fields will show an error message.
-
-
-3. Submit button will only work when all validations pass.
-
+Uses functions from validators.js to check password requirements.
+It also contains a reset page, to help reset password if forgotten.
 
 
-CUSTOMIZATION
+Signup Page (signup.html):
 
-You can extend validation rules by editing script.js, for example:
+Validates full name, email and password
 
-Add custom RegEx checks
+Ensures strong passwords.
 
-Add phone number or date validation
+Utilizes shared validation functions from validators.js.
 
-Modify error messages and styles in CSS
+
+validators.js:
+
+Contains reusable functions such as:
+
+validateEmail()
+
+validatePassword()
+
+validateUsername()
+
+
+Can be easily extended with more custom validators.
+
+
+
+Customization
+
+To extend or adjust validation rules:
+
+Edit or add functions in validators.js
+
+Modify feedback styles in login.css and signup.css
+
+
+You can also add validations like:
+
+Age/date of birth
+
+Phone number format
+
+If these inputs are added, Ofcourse
 
 
 License
 
 This project is licensed under the MIT License.
+
+
+---
+
+Author: Raeedah Musa
+GitHub: @Esme-raida
+
+---
