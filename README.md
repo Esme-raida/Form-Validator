@@ -19,6 +19,8 @@ Both pages use a shared validators.js file that contains reusable validation fun
 - Real-time validation feedback
 - Clean and responsive UI
 
+## Demo
+[View Live Demo](#)
 ## Technologies
 
 - HTML5  
