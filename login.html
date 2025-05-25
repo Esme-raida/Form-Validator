@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <form class="form-container"name="login-form">
+             <header>Login</header>
+             <span class="header-title">Welcome back! Please login to your account</span>
+
+            <div class="input-box">
+                <div class="input-icon icon-1">
+                    <i class="fas fa-user"></i>
+                </div>
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+
+
+            <div class="input-box input-box-password">
+                <div class="input-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <input type="password" name="password" placeholder="Password" required>
+                <div class="eye-icon">
+                    <i class="fas fa-eye" id="hide-password" style="display: none;"></i>
+                    <i class="fa-solid fa-eye-slash" id="show-password"style="display: inline;"></i>
+                 </div>
+            </div>
+            <span class="forgot-password">Forgot password</span>
+
+            <input class="login" type="submit" name="login" value="Login">
+            <span class="signup">Don't have an account?<a href="signup.html"  class="signup-link">Signup</a></span>
+        </form>
+    <script type="module" src="login.js"></script>
+
+                                <!--RESET PASSWORD MODAL-->
+
+    <form class="reset-form-container"name="reset-password-form" style="display: none;">
+            <header>Reset Password</header>
+            <span class="header-title">Enter your username to proceed</span>
+
+            <div class="input-box reset-input-box">
+                <div class="input-icon icon-1">
+                    <i class="fas fa-user"></i>
+                </div>
+                <input type="text" name="reset-username" placeholder="Username" required>
+            </div>
+
+
+            <div class="input-box input-box-password">
+                <div class="input-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <input type="password" name="reset-password" placeholder="Password" required>
+                <div class="eye-icon">
+                    <i class="fas fa-eye" id="reset-hide-password" style="display: none;"></i>
+                    <i class="fa-solid fa-eye-slash" id="reset-show-password" style="display: inline;"></i>
+                </div>
+            </div>
+            <span class="password-error error"></span>
+
+            <div class="input-box input-box-password">
+                <div class="input-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+                <div class="eye-icon">
+                    <i class="fas fa-eye" id="reset-hide-password-confirm" style="display: none;"></i>
+                    <i class="fa-solid fa-eye-slash" id="reset-show-password-confirm" style="display: inline;"></i>
+                </div>
+                <span class="password-error error"></span>
+            </div>
+            <input class="login" type="submit" value="Reset Password">
+            <button class="close-btn">X</button>
+        </form>
+</body>
+</html>

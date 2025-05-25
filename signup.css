@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 1em;
+    background: linear-gradient(135deg, #f1ace2 0%, #8E54E9 100%);
+}
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: -2em;
+}
+.span-header {
+    color: purple;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    display: flex; 
+    justify-content: center;
+    margin-top: 0.2em;
+}
+.header-text {
+    font-size: 0.7rem;
+    margin-top: -1.5em;
+    margin-bottom: 1em; 
+    color: rgb(99, 100, 97);
+    display: flex;
+    justify-content: center;
+}
+form {
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    max-width: 750px;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 1em;
+    border: 1px dotted gray;
+    padding: 1em;
+}
+.input-box-password {
+    /* Creates positioning context for absolute positioned children */
+    position: relative;
+    width: 100%;
+    margin-bottom: 0.8em;
+}
+input {
+    width: 100%;
+    border-radius: 0.5em;
+    border: 1px dotted gray;
+    padding: 0.8em;
+    padding-left: 2em;
+    /* Make sure password input has enough right padding */
+    padding-right: 2.5em; /* Room for the eye icon */
+    margin-bottom: 0.8em;
+    caret-color: purple;
+}
+input:focus {
+    border-color: #8E54E9;
+    box-shadow: 0 0 0 3px rgba(142, 84, 233, 0.2);
+    outline: none;
+}
+input::placeholder {
+    text-align: left;
+}
+.input-icon i {
+    position:absolute;
+    left: 1.8rem;
+    padding-top: 0.7rem;
+    color: purple;
+}
+.fa-lock {
+    margin-left: -1.1em;
+}
+.eye-icon {
+    position: absolute;
+    right: 0.625em;        /* Positions it the icon from the right*/
+    top: 45%;             /* Positions it 45% percent from the top */
+    transform: translateY(-50%); /* Shift up by half its height for perfect centering */
+    color: purple;
+    z-index: 1;           /* Makes sure it's above the input */
+}
+.eye-icon:hover {
+    cursor: pointer;
+}
+.error {
+    color: red;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+.submit {
+    border: 0.5px dotted white;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    background-color: rgb(26, 25, 25);
+    color: white;
+    padding: 0.8em;
+    border-radius: 0.5em;
+}
+.submit:hover{
+    background-color: rgb(51, 50, 50);
+    cursor: pointer;
+}
+.to-login-container p{
+    text-align: right;
+}
+.login {
+    margin-left: 0.5em;
+    color: purple;
+}
+
+/*RESPONSIVENESS*/
+
+@media screen and (max-width: 1440px) {
+    body {
+        height: 100vh;
+    }
+    header {
+        font-size: 1.3rem;
+        margin-top: -1.8em;
+        margin-bottom: -0.2em;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .header-text {
+        font-size: 1.2rem;
+        margin-top: -1.2em;
+        margin-bottom: 1em; 
+    }
+    form {
+        width: 80%;
+        gap: 0.5em;
+        padding: 1.5em;
+    }
+    label{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    input {
+        padding: 0.5em;
+        padding-left: 4em;
+        padding-right: 4em;
+        margin-bottom: 0.5em;
+        font-size: 1.2rem;
+    }
+    input::placeholder {
+        font-size: 1.5rem;
+    }
+    .input-icon i {
+        left: 3rem;
+        padding-top: 0.8rem;
+    }
+    .submit {
+        font-size: 1.2rem;
+        padding: 0.5em;
+    }
+    .to-login-container {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    .login {
+        margin-left: 0.5em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        height: 100vh;
+    }
+    header {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .header-text {
+        font-size: 1rem;
+        margin-top: -1.2em;
+    }
+    form {
+        width: 75%;
+        gap: 0.3em;
+        padding: 1em;
+    }
+    input {
+        font-size: 1rem;
+        padding-right: 3em;
+    }
+    input::placeholder {
+        font-size: 1rem;
+    }
+    .input-icon i {
+        left: 2rem;
+        padding-top: 0.5rem;
+    }
+    .submit {
+        font-size: 1rem;
+        padding: 0.3em;
+    }
+    .to-login-container {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    .login {
+        margin-left: 0.5em;
+    }     
+}
+
+@media screen  and (max-width: 768px) {
+    body{
+        height: 100vh;
+    }
+    .header {
+        font-size: 0.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .header-text {
+        margin-top: -1.5em;
+        font-size: 1rem;
+    }
+    form{
+        width: 85%;
+    }
+    input{
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+    input::placeholder {
+        font-size: 0.65rem;
+    }
+    .input-icon i {
+        left: 1.8em;
+        padding-right: -3em;
+        padding-top: 0.65em;
+    }
+    .submit {
+        font-size: 1rem;
+        padding: 0.3em;
+        margin-top: 0.5em;
+    }
+    .to-login-container {
+        font-size: 1rem;
+    }
+    .login {
+        margin-left: 0.5em;
+    }    
+    
+}
+
+@media screen and (max-width: 600px) {
+    html, body {
+        height: 100vh;
+        overflow-x: hidden; /* Prevents horizontal scroll on mobile */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body{
+        height: 100vh;
+        overflow: hidden;
+    }
+    form {
+        width: 95%;
+        padding: 0.8em;
+    }
+    label {
+        font-size: 0.7rem;
+    }
+    .input-icon i {
+        font-size: 0.8rem;
+        left: 2em;
+        padding-top: 0.9em;
+    }
+    .eye-icon {
+        font-size: 0.8rem; /* Adjusts icon size but not position */
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body{
+        height: 100vh;
+        overflow: hidden;
+    }
+    label{
+        font-size: 0.6rem;
+    }
+    input{
+        padding: 0.5em;
+        padding-left: 2em;
+    }
+    input::placeholder {
+        font-size: 0.65rem;
+    }
+    .input-icon i {
+        font-size: 0.8em;
+        left: 2em;
+        padding-top: 0.8em;
+    }
+    .submit {
+        font-size: 0.8rem;
+        padding: 0.3em;
+        margin-top: 0.5em;
+    }
+    .to-login-container {
+        font-size: 0.7rem;
+    }
+}

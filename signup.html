@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <h1>Welcome to your Ultimate Quiz<span class="span-header"> App</h1></span>
+    </header>
+    <div class="main-container">
+        <form name="sign-up-form">
+            <h2>Sign Up</h2>
+            <span class="header-text">Register to get started on your quiz journey!</span>
+
+            <label for="username">Username/Name</label>
+            <div class="input-box">
+                <div class="input-icon icon-1">
+                    <i class="fas fa-user"></i>
+                </div>
+                <input type="text" name="username" placeholder="e.g. esme_raida" required>
+                <span class="username-error error"></span>
+            </div>
+
+            <label for="email">Email</label>
+
+            <div class="input-box">
+                <div class="input-icon icon-2">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <input type="email" name="email" placeholder="example@gmail.com" required>
+                <span class="email-error error"></span>
+            </div>
+            
+
+            <label for="password">Password</label>
+            <div class="input-box-password">
+                <div class="input-icon icon-3">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <input type="password" name="password" placeholder="1wg5-/gt6" required>
+                <div class="eye-icon icon-4">
+                    <i class="fa-solid fa-eye-slash" style="display: none;"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <span class="password-error error"></span>
+            </div>
+
+            <input class="submit" type="submit" name="submit" value="Sign Up">
+        </form>
+        <div class="to-login-container">
+            <p style="display: flex; justify-content: center;">Already have an account?<a href="login.html" class="login">Login</a></p>
+        </div>
+    </div>
+    <script type="module" src="signup.js" m></script>
+</body>
+</html>
